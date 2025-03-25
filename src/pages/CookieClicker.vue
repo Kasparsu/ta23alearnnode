@@ -29,6 +29,8 @@ function buyBuilding(building){
 onUnmounted(() => {
     clearInterval(cpsInterval);
 });
+
+// features
 </script>
 <template>
     <div class="columns">
