@@ -31,6 +31,7 @@ onUnmounted(() => {
 });
 
 // features
+// fixes
 </script>
 <template>
     <div class="columns">
