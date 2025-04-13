@@ -70,7 +70,7 @@ onUnmounted(() => {
 </script>
 <template>
 	<div class="columns">
-		<div class="column is-3 has-background-primary has-text-centered">
+		<div class="column is-3 has-background-grey-light has-text-centered">
 			<h1 class="is-size-1">
 				<b>Cookies: {{ +cookies.toFixed(1) }}</b>
 			</h1>
@@ -81,10 +81,10 @@ onUnmounted(() => {
 				<img @click="CookieClick" :src="currentImage" class="is-rounded" />
 			</figure>
 		</div>
-		<div class="column is-7 has-background-info">Something</div>
-		<div class="column is-2 has-background-warning">
+		<div class="column is-7 has-background-grey">Something</div>
+		<div class="column is-2 has-background-dark">
 			<button
-				class="button is-large is-fullwidth is-primary"
+				class="button is-large is-fullwidth is-warning"
 				v-for="building in buildings"
 				:disabled="cookies < building.price"
 				@click="buyBuilding(building)"
@@ -92,7 +92,7 @@ onUnmounted(() => {
 				{{ building.name }} 🍪{{ building.price }} #{{ building.count }}
 			</button>
 			<button
-				class="button is-large is-fullwidth is-secondary"
+				class="button is-large is-fullwidth is-danger"
 				v-for="buff in buffs"
 				:disabled="cookies < buff.price"
 				@click="buyBuff(buff)"
